@@ -13,43 +13,46 @@ h3 {
   margin: 2em;
 }
 
-label {
-  font-family: 'Raleway', sans-serif;
+input[type="radio" i] {
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 #operando1, #operando2, #resultado{
-  font-size: 1em;
-  width:50%;
-  height: auto;
+  font-size: 1.6em;
+  width:5em;
+  height: 2em;
   border-radius: 0.5em;
   border: 1px solid grey;
-  padding: 0 0.5em;
-  background-color: rgba(181, 254, 55, 0.46);
+  padding: 0.3em;
+  margin: 0.5em auto 0.5em auto;
+  background-color: white;
 }
 
 #resultado {
-  height: 1em;
-  background-color: rgb(91, 174, 255);
+  background-color: rgba(121, 114, 203, 0.4);
+}
+
+#reset {
+  margin: 1.5em;
 }
 
 .btn-radio {
-  display: inline-block;
-  font-size: 2em;
-
-}
-
-button#calcular {
-  font-size: 1em;
+  font-size: 1.8em;
   font-weight: bold;
-  margin-top: 1em;
-  padding: 1em 2em;
-  background-color:#F1C40F;
-  border-radius: 0.5em;
-}
-
-label {
-  margin-bottom: 0;
   font-family: 'Roboto Mono', monospace;
-
+  border-radius: 0.5em;
+  border: 1px solid grey;
+  padding: 0.2em;
+  background-color: rgb(143, 242, 7);
+  margin: 0.6em 0 0.1em 0;
 }
+
+@media(min-width:1024px) {
+
+#operando1, #operando2, #resultado{
+  font-size: 1.8em;
+  width:6em;
+  height: 2.3em;
+ }
 }

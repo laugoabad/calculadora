@@ -20,39 +20,33 @@
     </div>
 
     <div class="row">
-      <div class="col-lg-2 col-12">
+      <div class="col-lg-2 col-12 text-center">
         <input type="text" name="operando1" id="operando1">
       </div>
-
-      <div class="col-lg-3 col-12">
-        <div class="row">
-          <label class="btn-radio col-3 text-center"><input type="radio" name="operacion" value="+">+</label>
-          <label class="btn-radio col-3 text-center"><input type="radio" name="operacion" value="-">-</label>
-          <label class="btn-radio col-3 text-center"><input type="radio" name="operacion" value="*">*</label>
-          <label class="btn-radio col-3 text-center"><input type="radio" name="operacion" value="/">/</label>
-        </div>
+      <div class="col-lg-3 col-12 text-center">
+        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="+">+</label>
+        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="-">-</label>
+        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="*">*</label>
+        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="/">/</label>
       </div>
 
-      <div class="col-lg-2 col-12">
+      <div class="col-lg-2 col-12 text-center">
         <input type="text" name="operando2" id="operando2">
       </div>
 
-      <div class="col-lg-1 col-12 text-center">
-       <button id="calcular">=</button>
+      <div class="col-lg-2 col-12 text-center ">
+        <button class="btn-radio col-4" id="calcular">=</button>
       </div>
 
-      <div class="col-lg-2  col-12 text-center">
+      <div class="col-lg-2 col-12 text-center">
         <div id="resultado"></div>
       </div>
-    </div>
-    <div class="row form-group justify-content-md-center">
+
       <div class="col-12 text-center">
-        <button id="reset">Reset</button>
+        <button type="button" class="btn btn-warning" id="reset">Reset</button>
       </div>
     </div>
-
   </div>
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

@@ -45,7 +45,6 @@ jQuery(function($) {
     document.getElementById('resultado').innerHTML = resultado;
   });
 
-
   //Resetea todo con click en el botón 'reset'
   $('#reset').click(function() {
     $('input:text').val('');

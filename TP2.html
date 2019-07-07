@@ -23,11 +23,11 @@
       <div class="col-lg-2 col-12 text-center">
         <input type="text" name="operando1" id="operando1">
       </div>
-      <div class="col-lg-3 col-12 text-center">
-        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="+">+</label>
-        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="-">-</label>
-        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="*">*</label>
-        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="/">/</label>
+      <div class="col-lg-3 col-12 text-center" id="operandos">
+        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="+" onclick="marcarOperacion()">+</label>
+        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="-" onclick="marcarOperacion()">-</label>
+        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="*" onclick="marcarOperacion()">*</label>
+        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="/" onclick="marcarOperacion()">/</label>
       </div>
 
       <div class="col-lg-2 col-12 text-center">
@@ -35,7 +35,7 @@
       </div>
 
       <div class="col-lg-2 col-12 text-center ">
-        <button class="btn-radio col-4" id="calcular">=</button>
+        <button class="btn-radio col-4" id="calcular" onclick="calcular()">=</button>
       </div>
 
       <div class="col-lg-2 col-12 text-center">
@@ -43,7 +43,7 @@
       </div>
 
       <div class="col-12 text-center">
-        <button type="button" class="btn btn-warning" id="reset">Reset</button>
+        <button type="button" class="btn btn-warning" id="reset" onclick="reset()">Reset</button>
       </div>
     </div>
   </div>

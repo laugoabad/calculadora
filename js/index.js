@@ -1,16 +1,15 @@
 
-jQuery(function($) {
-
   //Al seleccionar la operacion, le cambia el backgroundColor
   //a la operacion seleccionada
-  $('input:radio[name="operacion"]').on("click", function() {
+
+  function marcarOperacion() {
     var radioChecked = document.querySelector('input[name="operacion"]:checked');
     radioChecked.parentElement.style.backgroundColor = "rgb(254, 73, 0)";
-  });
+  };
 
 
   //Hace los cálculos con el click en el botón '='
-  $('#calcular').click(function() {
+  function calcular() {
     var operando1 = parseInt(document.getElementById('operando1').value);
     var operando2 = parseInt(document.getElementById('operando2').value);
     var radioChecked = document.querySelector('input[name="operacion"]:checked');
@@ -43,16 +42,14 @@ jQuery(function($) {
     }
     resultado = resultado.toFixed(2);
     document.getElementById('resultado').innerHTML = resultado;
-  });
+  };
 
   //Resetea todo con click en el botón 'reset'
-  $('#reset').click(function() {
+  function reset() {
     $('input:text').val('');
     document.getElementById('resultado').innerHTML = '';
     var radioChecked = document.querySelectorAll('input[name="operacion"]');
     radioChecked.forEach(function (item, index, arr) {
       arr[index].parentElement.style.backgroundColor = "rgb(143, 242, 7)";
     });
-  });
-
-});
+  };

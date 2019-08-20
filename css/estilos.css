@@ -1,6 +1,14 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
 
-html {
-  height: 100vh;
+body {
+  width: 90%;
+  font-size: 100%;
+  margin-left: auto;
+  margin-right: auto
 }
 
 body{

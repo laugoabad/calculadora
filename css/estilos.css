@@ -15,6 +15,7 @@ body {
 }
 
 h3 {
+  font-size: 5vw;
   margin: 2em;
 }
 
@@ -24,7 +25,7 @@ input[type="radio" i] {
 }
 
 #operando1, #operando2, #resultado{
-  font-size: 1.6em;
+  font-size: 3vw;
   width:5em;
   height: 2em;
   border-radius: 0.5em;
@@ -39,25 +40,18 @@ input[type="radio" i] {
 }
 
 #reset {
-  margin: 1.5em;
+  font-size: 3vw;
+  margin: 1.5em;border-radius: 0.5em;
+  border: 1px solid grey;
 }
 
 .btn-radio {
-  font-size: 1.8em;
+  font-size: 2vw;
   font-weight: bold;
   font-family: 'Roboto Mono', monospace;
   border-radius: 0.5em;
   border: 1px solid grey;
   padding: 0.2em;
   background-color: rgb(143, 242, 7);
-  margin: 0.6em 0 0.1em 0;
-}
-
-@media(min-width:1024px) {
-
-#operando1, #operando2, #resultado{
-  font-size: 1.8em;
-  width:6em;
-  height: 2.3em;
- }
+  margin: 1em 0 0.4em 0;
 }

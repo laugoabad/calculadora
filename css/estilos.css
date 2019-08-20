@@ -26,7 +26,7 @@ input[type="radio" i] {
 
 #operando1, #operando2, #resultado{
   font-size: 2.5vw;
-  width:5em;
+  width:6em;
   height: 2em;
   border-radius: 0.5em;
   border: 1px solid grey;

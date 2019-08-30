@@ -5,7 +5,6 @@
 }
 
 body {
-  font-size: 100%;
   background-color: #EFEBE9;
 }
 
@@ -20,24 +19,26 @@ input[type="radio" i] {
 }
 
 #operando1, #operando2, #resultado {
-  width: 10rem;
+  width: 15rem;
   height: 3rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   border-radius: 0.5rem;
   border: 1px solid grey;
   background-color: white;
   margin: 1rem;
+  padding: 0.3rem;
 }
 
 #resultado {
   background-color: rgba(121, 114, 203, 0.4);
 }
 
-#reset {
+#reset, #continuar {
   width: 10rem;
   height: 4rem;
   border: 1px solid grey;
   border-radius: 0.5rem;
+  padding: 0.3rem;
 }
 
 .btn-radio {
@@ -47,5 +48,5 @@ input[type="radio" i] {
   border-radius: 0.5rem;
   border: 1px solid grey;
   background-color: rgb(143, 242, 7);
-  margin: 0.5rem;
+  margin: 0.3rem;
 }

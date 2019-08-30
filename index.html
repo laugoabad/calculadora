@@ -12,13 +12,13 @@
 </head>
 <body>
   <div class="container">
-    <div class="row d-flex justify-content-center">
+    <div class="row">
       <div class="col-12">
         <h3 class="text-center">CALCULADORA</h3>
       </div>
     </div>
 
-    <div class="row d-flex justify-content-center ">
+    <div class="row">
       <div class="col-12 text-center">
         <input type="text" name="operando1" id="operando1">
       </div>
@@ -34,11 +34,14 @@
       </div>
 
       <div class="col-12 text-center ">
-        <button class="btn-radio col-4" id="calcular" onclick="calcular()">=</button>
+        <button class="btn-radio" id="calcular" onclick="calcular()">=</button>
       </div>
 
       <div class="col-12 d-flex justify-content-center">
         <div id="resultado"></div>
+      </div>
+      <div class="col-12 text-center">
+        <button type="button" class="btn btn-radio" id="continuar" onclick="continuar()">Continuar</button>
       </div>
       <div class="col-12 text-center">
         <button type="button" class="btn btn-radio" id="reset" onclick="reset()">Reset</button>

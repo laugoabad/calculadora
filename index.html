@@ -4,46 +4,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie.edge">
-  <title>Trabajo opcional 2</title>
+  <title>Calculadora</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" type="text/css" href="css/estilos.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cinzel|Roboto+Mono&display=swap" rel="stylesheet">
+ 
 </head>
 <body>
   <div class="container">
-    <div class="row">
+    <div class="row d-flex justify-content-center">
       <div class="col-12">
         <h3 class="text-center">CALCULADORA</h3>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-lg-2 col-12 text-center">
+    <div class="row d-flex justify-content-center ">
+      <div class="col-12 text-center">
         <input type="text" name="operando1" id="operando1">
       </div>
-      <div class="col-lg-4 col-12 text-center" id="operandos">
-        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="+" onclick="marcarOperacion()">+</label>
-        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="-" onclick="marcarOperacion()">-</label>
-        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="*" onclick="marcarOperacion()">*</label>
-        <label class="btn-radio col-2 text-center"><input type="radio" name="operacion" value="/" onclick="marcarOperacion()">/</label>
+      <div class="col-12 text-center" id="operandos">
+        <label class="btn-radio"><input type="radio" name="operacion" value="+" onclick="marcarOperacion()">+</label>
+        <label class="btn-radio "><input type="radio" name="operacion" value="-" onclick="marcarOperacion()">-</label>
+        <label class="btn-radio"><input type="radio" name="operacion" value="*" onclick="marcarOperacion()">*</label>
+        <label class="btn-radio"><input type="radio" name="operacion" value="/" onclick="marcarOperacion()">/</label>
       </div>
 
-      <div class="col-lg-2 col-12 text-center">
+      <div class="col-12 text-center">
         <input type="text" name="operando2" id="operando2">
       </div>
 
-      <div class="col-lg-2 col-12 text-center ">
+      <div class="col-12 text-center ">
         <button class="btn-radio col-4" id="calcular" onclick="calcular()">=</button>
       </div>
 
-      <div class="col-lg-2 col-12 text-center">
+      <div class="col-12 d-flex justify-content-center">
         <div id="resultado"></div>
       </div>
-      <div class="row"></div>
       <div class="col-12 text-center">
-        <button type="button" class="btn btn-warning" id="reset" onclick="reset()">Reset</button>
+        <button type="button" class="btn btn-radio" id="reset" onclick="reset()">Reset</button>
       </div>
       </div>
     </div>

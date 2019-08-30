@@ -1,22 +1,17 @@
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  width: 90%;
   font-size: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color:	#EFEBE9;
-  font-family: 'Roboto Mono', monospace;
- 
+  background-color: #EFEBE9;
 }
 
 h3 {
-  font-size: 5vw;
-  margin: 2em;
+  font-size: 3rem;
+  margin: 3rem 0 5rem 0;
 }
 
 input[type="radio" i] {
@@ -24,15 +19,14 @@ input[type="radio" i] {
   -webkit-appearance: none;
 }
 
-#operando1, #operando2, #resultado{
-  font-size: 2.5vw;
-  width:6em;
-  height: 2em;
-  border-radius: 0.5em;
+#operando1, #operando2, #resultado {
+  width: 10rem;
+  height: 3rem;
+  font-size: 2rem;
+  border-radius: 0.5rem;
   border: 1px solid grey;
-  padding: 0.3em;
-  margin: 0.5em auto 0.5em auto;
   background-color: white;
+  margin: 1rem;
 }
 
 #resultado {
@@ -40,18 +34,18 @@ input[type="radio" i] {
 }
 
 #reset {
-  font-size: 3vw;
-  margin: 1.5em;
+  width: 10rem;
+  height: 4rem;
   border: 1px solid grey;
+  border-radius: 0.5rem;
 }
 
 .btn-radio {
-  font-size: 2vw;
-  font-weight: bold;
-  font-family: 'Roboto Mono', monospace;
-  border-radius: 0.5em;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
   border: 1px solid grey;
-  padding: 0.2em;
   background-color: rgb(143, 242, 7);
-  margin: 1em 0 0.4em 0;
+  margin: 0.5rem;
 }

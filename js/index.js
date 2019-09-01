@@ -40,6 +40,7 @@ function calcular() {
     default:
       text = "Tenés que elegir una operación"
   }
+  resultado = resultado.toFixed(7);
   document.getElementById('resultado').innerHTML = resultado;
 };
 

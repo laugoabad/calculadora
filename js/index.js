@@ -10,8 +10,8 @@ function marcarOperacion() {
 
 //Hace los cálculos con el click en el botón '='
 function calcular() {
-  var operando1 = parseInt(document.getElementById('operando1').value);
-  var operando2 = parseInt(document.getElementById('operando2').value);
+  var operando1 = parseFloat(document.getElementById('operando1').value);
+  var operando2 = parseFloat(document.getElementById('operando2').value);
   var radioChecked = document.querySelector('input[name="operacion"]:checked');
   var operacion = radioChecked.value;
   var resultado;
@@ -40,7 +40,6 @@ function calcular() {
     default:
       text = "Tenés que elegir una operación"
   }
-  resultado = resultado.toFixed(2);
   document.getElementById('resultado').innerHTML = resultado;
 };
 

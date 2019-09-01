@@ -41,6 +41,9 @@ input[type="radio" i] {
   border-radius: 0.5rem;
   padding: 0.3rem;
 }
+ #reset {
+   background-color: rebeccapurple;
+ }
 
 .btn-radio {
   width: 3rem;

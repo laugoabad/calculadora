@@ -60,4 +60,9 @@ function continuar() {
   $('input:text').val('');
   document.getElementById('resultado').innerHTML = '';
   document.getElementById('operando1').value = resultado;
+  var radioChecked = document.querySelectorAll('input[name="operacion"]');
+  radioChecked.forEach(function (item, index, arr) {
+    arr[index].parentElement.style.backgroundColor = "rgb(143, 242, 7)";
+  });
+
 };

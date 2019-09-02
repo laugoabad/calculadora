@@ -57,12 +57,6 @@ function reset() {
 //Lleva el resultado como entrada para la siguiente operacion
 function continuar() {
   var resultado = document.getElementById('resultado').innerHTML;
-  $('input:text').val('');
-  document.getElementById('resultado').innerHTML = '';
+  reset();
   document.getElementById('operando1').value = resultado;
-  var radioChecked = document.querySelectorAll('input[name="operacion"]');
-  radioChecked.forEach(function (item, index, arr) {
-    arr[index].parentElement.style.backgroundColor = "rgb(143, 242, 7)";
-  });
-
 };
